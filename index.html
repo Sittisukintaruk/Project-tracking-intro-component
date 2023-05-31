@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <!-- /* Watch style */ -->
+    <!-- /*npx tailwindcss -i ./style/main.css -o ./style/style.css --watch -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body">
+   <div class="relative h-screen overflow-hidden">
+    <div
+    class="mt-9 h-screen overflow-hidden px-9 pb-[93px] md:mx-auto md:grid md:h-auto md:w-full md:max-w-[768px] md:px-0 md:pb-0 lg:mt-[63px] lg:max-w-[1112px]"
+  >
+    <!-- header -->
+    <header class="flex items-center justify-between lg:justify-between">
+      <a href="">
+        <img src="./imgs/logo.svg" alt="logo" />
+      </a>
+      <div class="cursor-pointer md:hidden" id="humberger">
+        <img src="./imgs/icon-hamburger.svg" alt="hamburger" />
+      </div>
+      <div
+        id="menu"
+        class="fixed top-24 left-2/4 z-50 hidden h-[235px] w-full max-w-[311px] -translate-x-2/4 transform shadow-lg md:hidden"
+      >
+        <div
+          class="relative flex flex-col items-center gap-[28px] bg-white px-[20px] py-6 text-center uppercase leading-[23px]"
+        >
+          <img
+            class="absolute right-0 -top-10 cursor-pointer"
+            src="./imgs/icon-close.svg"
+            id="close"
+            alt="close"
+          />
+          <ul
+            class="flex w-full flex-col items-center gap-6 border-b pb-[28px] text-[19px] font-bold tracking-wider text-VeryDarkBlue"
+          >
+            <a href=""><li>Product</li></a>
+            <a href=""><li>Features</li></a>
+            <a href=""><li>Pricing</li></a>
+          </ul>
+          <a
+            href=""
+            class="text-[19px] font-bold tracking-wider text-graylight"
+            ><span>Login</span></a
+          >
+        </div>
+      </div>
+      <div class="hidden  md:block">
+        <div class="flex gap-[92px] uppercase">
+          <div>
+            <ul
+              class="flex gap-[42px] text-base font-bold tracking-wider text-VeryDarkBlue"
+            >
+              <a class="hover:border-b hover:border-VeryDarkBlue  border-b border-transparent" href=""><li>Product</li></a>
+              <a class="hover:border-b hover:border-VeryDarkBlue  border-b border-transparent" href=""><li>Features</li></a>
+              <a class="hover:border-b hover:border-VeryDarkBlue  border-b border-transparent" href=""><li>Pricing</li></a>
+            </ul>
+          </div>
+          <div class="font-bold tracking-wider text-graylight"><a class="cursor-pointer hover:border-b hover:border-VeryDarkBlue  border-b border-transparent" href="">login</a></div>
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <main
+      class="mt-[82px] h-full md:flex md:flex-col md:items-center lg:mt-[162px] lg:flex-row lg:items-start"
+    >
+      <figure class="lg:hidden">
+        <img
+          class="max-h-[246px] max-w-[509px] -translate-x-5 transform"
+          src="./imgs/illustration-devices.svg"
+          alt="devices"
+        />
+      </figure>
+      <section
+        class="mt-[70px] flex flex-col gap-8 font-Condensed lg:mt-0 lg:flex-1 lg:gap-[66px]"
+      >
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-4 uppercase">
+            <div
+              class="rounded-xl bg-VeryDarkBlue px-3 py-[2.5px] text-base font-bold text-LightGrayishBlue"
+            >
+              new
+            </div>
+            <h3
+              class="text-base font-normal leading-[20px] tracking-[0.285em] text-GrayishBlue"
+            >
+              Monograph Dashboard
+            </h3>
+          </div>
+          <div class="flex flex-col gap-4 lg:gap-[33px]">
+            <h1
+              class="text-[40px] font-bold uppercase leading-none text-VeryDarkBlue lg:text-[64px]"
+            >
+              Powerful insights into your team
+            </h1>
+            <p
+              class="text-[20px] leading-[25px] tracking-[0.08em] text-Darkgrayblue"
+            >
+              Project planning and time tracking <br />
+              for agile teams
+            </p>
+          </div>
+        </div>
+        <!-- button  -->
+        <div class="flex items-center gap-[18px] lg:gap-[26px]">
+          <a
+            href=""
+            class="rounded-md bg-red px-6 py-[10px] font-bold uppercase tracking-[0.035em] text-white hover:opacity-80"
+          >
+            <span class="text-[15px]">Schedule a demo</span>
+          </a>
+          <span class="text-sm uppercase tracking-[0.18em] text-graylight"
+            >to see a preview</span
+          >
+        </div>
+      </section>
+
+      <section class="hidden h-full flex-1 lg:block">
+        <img
+          class="absolute -translate-y-[75px] transform"
+          src="./imgs/illustration-devices.svg"
+          alt="devices"
+        />
+      </section>
+    </main>
+  </div>
+
+   </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
